@@ -19,9 +19,10 @@ class CHAR{
         cout << caracter << endl;
     } // Fin Operator !
 
-    STRING &operator+(CHAR caractersuma){
-        string cadena;
-        cadena = caracter + caractersuma.caracter;
+    STRING operator+(CHAR caractersuma){
+        string cadena = "";
+        cadena += caracter;
+        cadena += caractersuma.caracter;
         STRING suma;
         suma << cadena;
         return suma;
